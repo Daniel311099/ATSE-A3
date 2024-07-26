@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+}
+
+form {
+    margin: 20px;
+}
+
+#seatMap {
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background-color: #FFD700;
+}
+
+.seat.locked {
+    background-color: #FF6347;
+    cursor: not-allowed;
+}
